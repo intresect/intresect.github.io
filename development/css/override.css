@@ -11,11 +11,12 @@ a, p, li {
 
 .boxDiv {
 	background: #000000;
-	margin-top: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
 	color: #66FFFF;
-	padding: 10px;
+	padding: 20px;
 	text-align: center;
 	width: 100%;
 }
