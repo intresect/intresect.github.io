@@ -11,72 +11,33 @@
 
     <title>Intresect Software Intitative</title>
 	
-	<!-- all this random bootstrap crap -->
-    <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<!-- if you enable this, make sure override.css is imported (it should be anyway)-->
-	<!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" -->
-	
 	<!-- import the animation files -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel='stylesheet' href="css/animate.css">
 	<script src="js/wow.min.js"></script>
 	<script>
     	new WOW().init();
     </script>
 	
 	<!-- import the override -->
-	<link rel="stylesheet" href="css/override.css">
+	<link rel='stylesheet' href="css/override.css">
 	
   </head>
 
   <body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="retoverride">
-      <div class="container">
-      	<div class="navbar-header">
-          <a id="retTop" class="navbar-brand" href="#">Intresect</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a id="retAbout" href="#about">About</a></li>
-            <li><a id="retProjects" href="#projects">Projects</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="jumbotron">
-
-      <div class="container" align="center">
-        <h1>Intresect</h1>
-        <p class="lead wow fadeInUp">The Software Intiative</p>
-      </div>
-
+    
+    <div class='boxDiv' align='center'>
+    	<a href="#"><img src="img/intresect.min.png" /></a>
+    	<h1>Intresect</h1>
+    	<p class='lead wow fadeInUp'>The Software Initiative</p><br/>
+    	<a href="#about" class="navButton">About</a>
+    	<span style="color:white;">&nbsp;&bull;&nbsp;</span>
+    	<a href="#projects" class="navButton">Projects</a>
+    	<span style="color:white;">&nbsp;&bull;&nbsp;</span>
+    	<a href="#contact" class="navButton">Contact Us</a>
     </div>
-
 
 	<!-- keep this at the end to speed up loading -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script>
-    	$('#retTop').mouseover(function() {
-    		$('#retTop').addClass("animated bounce");
-    		$('#retTop').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-    			$('#retTop').removeClass("animated bounce");
-    		});
-    	});
-    	$('#retAbout').mouseover(function() {
-    		$('#retAbout').addClass("animated bounce");
-    		$('#retAbout').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-    			$('#retAbout').removeClass("animated bounce");
-    		});
-    	});
-    	$('#retProjects').mouseover(function() {
-    		$('#retProjects').addClass("animated bounce");
-    		$('#retAbout').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-    			$('#retProjects').removeClass("animated bounce");
-    		});
-    	});
-    </script>
+    
   </body>
 </html>
