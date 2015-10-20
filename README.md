@@ -1,1 +1,0 @@
-# intresect.github.io
