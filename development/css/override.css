@@ -20,3 +20,9 @@ a, p, li {
 	text-align: center;
 	width: 100%;
 }
+.boxDiv h1 {
+	font-size: 1.5em;
+}
+.boxDiv p {
+	font-size: 1.25em;
+}
