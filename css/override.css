@@ -19,7 +19,7 @@ a, p, li {
 	color: #55FFFF;
 	padding: 20px;
 	text-align: center;
-	width: 100%;
+	width: auto;
 }
 .boxDiv h1 {
 	font-size: 4em;

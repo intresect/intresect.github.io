@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="Intresect SI">
-    <!-- link rel="icon" href="../../favicon.ico" -->
+    <link rel="icon" href="img/favicon.ico">
 
     <title>Intresect Software Intitative</title>
 	
@@ -26,9 +26,9 @@
   <body>
     
     <div class='boxDiv' align='center'>
-    	<a href="#"><img src="img/intresect.min.png" /></a>
+    	<a href="#"><img id='intresectLogo' src="img/intresect.min.png" /></a>
     	<h1>Intresect</h1>
-    	<p class='lead wow fadeInUp'>The Software Initiative</p><br/>
+    	<p id='intresectLine'>The Software Initiative</p><br/>
     	<a href="#about" class="navButton">About</a>
     	<span style="color:white;">&nbsp;&bull;&nbsp;</span>
     	<a href="#projects" class="navButton">Projects</a>
@@ -38,6 +38,10 @@
 
 	<!-- keep this at the end to speed up loading -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    
+    <script>
+    	// We're doing this to make sure the animation doesn't screw up
+    	$('#intresectLine').addClass('fadeInUp');
+    	$('#intresectLogo').addClass('fadeIn');
+    </script>
   </body>
 </html>
