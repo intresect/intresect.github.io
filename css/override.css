@@ -1,28 +1,53 @@
 @import url(http://bit.ly/1RmvUQ0); /* Sans */
 @import url(http://bit.ly/1GodBcP); /* Roboto (The Android Font) */
 
+/* add a #226B6B as a dark  */
+/* add a #B26F39 as a light */
+
+/* use #062121 as a dText   */
+/* use #001919 as a dText   */
+
 h1, h2, h3, h4, h5 {
 	font-family: 'PT Sans';
 }
 
 a, p, li {
 	font-family: 'Roboto';
-	color: #FFFFFF;
 }
 
-.boxDiv {
-	background: #000000;
-	position: absolute;
+#fixedBoxDiv {
+	color: #55FFFF;
+	position: fixed;
 	top: 0px;
+	height: 375px;
+	background: #000000;
+}
+#menuBoxDiv {
+	color: #55FFFF;
+	position: absolute;
+	top: 375px;
+	height: 100px;
+	background: #000000;
+}
+#about {
+	position: absolute;
+	top: 475px;
+	background: #F5F5F5;
+	color: #001919;
+}
+#about p {
+	color: #000000;
+	margin-top: 5px;
+}
+.boxDiv {
+	padding: 20px;
 	left: 0px;
 	right: 0px;
-	color: #55FFFF;
-	padding: 20px;
 	text-align: center;
 	width: auto;
 }
 .boxDiv h1 {
-	font-size: 4em;
+	font-size: 3.75em;
 	margin-top: 0px;
 	margin-bottom: 5px;
 	padding-top: 0px;
