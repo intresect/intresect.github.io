@@ -45,7 +45,7 @@
     </div>
     <div class='boxDiv' id='about'>
     	<h1><br/>It's all black and <span style='text-decoration:line-through;'>white</span> cyan</h1>
-    	<p>We're just a small development team, innovating and adapting to the modern internet one website at a time.<br/>The nature of the web itself is about to change dramatically, and we're ready.</p>
+    	<p>We're just a small development team,innovating and adapting to the modern internet one website at a time.<br/>The nature of the web itself is about to change dramatically, and we're ready.</p>
     </div>
 
 	<!-- keep this at the end to speed up loading -->
