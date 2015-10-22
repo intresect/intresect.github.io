@@ -17,15 +17,30 @@
 	<script>
     	new WOW().init();
     </script>
+    
+    <!-- jQuery and define functions -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    	function pageScroll() {
+			if (window.pageYOffset >= 375) {
+				$('#menuBoxDiv').css('position', 'fixed');
+				$('#menuBoxDiv').css('top', '0px');
+			}
+			else {
+				$('#menuBoxDiv').css('position', 'absolute');
+				$('#menuBoxDiv').css('top', '375px');
+			}
+		}
+    </script>
 	
 	<!-- import the override -->
 	<link rel='stylesheet' href="css/override.css">
 	
   </head>
 
-  <body>
+  <body onscroll="pageScroll()">
     <div class='boxDiv' id='fixedBoxDiv' align='center'>
-    	<a href="#"><img id='intresectLogo' src="img/intresect.min.png" /></a>
+    	<br/><a href="#"><img id='intresectLogo' src="img/intresect.min.png" /></a>
     	<h1>INTRESECT</h1>
     	<p style='color:#F5F5F5;' id='intresectLine'>The Software Initiative</p><br/><br/><br/>
     	<!--
@@ -36,6 +51,7 @@
     	<a href="#contact" class="navButton">Contact Us</a>
     	-->
     </div>
+    <div id='blackGradient'></div>
     <div class='boxDiv' id='menuBoxDiv'>
     	<a href="#about" class="navButton">About</a>
     	<span style="color:white;">&nbsp;&bull;&nbsp;</span>
@@ -51,17 +67,16 @@
     	<br/>
     	<table align='center' style='width:99%;'>
     		<tr align='center'>
-    			<td align='center' style='width:24%;text-align:center;'><h2>Devin</h2><br/><img src="img/devin.final.min.png"/></td>
+    			<td align='center' style='width:24%;text-align:center;'><h2>Devin</h2><br/><img src="img/transparent.min.png"/></td>
     			<td align='center' style='width:24%;text-align:center;'><h2>Ethan</h2><br/><img src="img/transparent.min.png"/></td>
     			<td align='center' style='width:24%;text-align:center;'><h2>John Grady</h2><br/><img src="img/transparent.min.png"/></td>
-    			<td align='center' style='width:24%;text-align:center;'><h2>Sunny</h2><br/><img src="img/sunny.final.min.png"/></td>
+    			<td align='center' style='width:24%;text-align:center;'><h2>Sunny</h2><br/><img src="img/transparent.min.png"/></td>
     		</tr>
     	</table>
     	
     </div>
 
 	<!-- keep this at the end to speed up loading -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
     	// We're doing this to make sure the animation doesn't screw up
     	$('#intresectLine').addClass('animated fadeInUp');
