@@ -21,6 +21,7 @@
     <!-- jQuery and define functions -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
+    /**
     	function pageScroll() {
 			if (window.pageYOffset >= 375) {
 				$('#menuBoxDiv').css('position', 'fixed');
@@ -31,6 +32,7 @@
 				$('#menuBoxDiv').css('top', '375px');
 			}
 		}
+	*/
     </script>
 	
 	<!-- import the override -->
@@ -38,7 +40,8 @@
 	
   </head>
 
-  <body onscroll="pageScroll()">
+  <!-- <body onscroll="pageScroll()"> -->
+  <body>
     <div class='boxDiv' id='fixedBoxDiv' align='center'>
     	<br/><a href="#"><img id='intresectLogo' src="img/intresect.min.png" /></a>
     	<h1>INTRESECT</h1>
@@ -63,7 +66,7 @@
     	<h1><br/>It's all black and <span style='text-decoration:line-through;'>white</span> cyan</h1>
     	<p>We're just a small development team, innovating and adapting to the modern internet one website at a time.</p>
     	<br/>
-    	<h1 style='font-size:2.5em;'>Our Team</h1>
+    	<h1 style='font-size:2.5em;'>The Intresect Team</h1>
     	<br/>
     	<table align='center' style='width:99%;'>
     		<tr align='center'>
@@ -78,9 +81,42 @@
     			<td align='center' style='width:33%;text-align:center;'><h2>John Grady</h2><br/><img src="img/transparent.min.png"/></td>
     		</tr>
     	</table>
-    	
     </div>
-
+	<div class='boxDiv' id='projects'>
+		<h1 style='color:#E46700;'><br/>Our Projects</h1>
+		<br/>
+		<table align='center' style='width:90%';>
+			<tr align='center'>
+				<td valign='top' align='center' style='width:30%;text-align:center;color:#E46700;padding:5px;'>
+					<h2 style='font-size:2em;'>Website</h2>
+					<br/>
+					<p>The place where we showcase these projects and give you ways to contact us</p>
+				</td>
+				<td valign='top' align='center' style='width:30%;text-align:center;color:#F5F5F5;padding:5px;'>
+					<h2 style='font-size:2em;'>Intresect Blog</h2>
+					<br/>
+					<p>The site we use to give you information on our upcoming ideas, projects, and events</p>
+				</td>
+				<td valign='top' align='center' style='width:30%;text-align:center;color:#F5F5F5;padding:5px;'>
+					<h2 style='font-size:2em;'>Phantom</h2>
+					<br/>
+					<p>A truly unbreakable encryption system using random hashes as keys in a way unique to both the sender and receiver</p>
+				</td>
+			</tr>
+			<br/>
+			<!--
+			<tr align='center'>
+				<td valign='top' align='center' style='width:33%;font-size:2em;text-align:center;color:#F5F5F5;'><h2></h2><br/></td>
+				<td valign='top' align='center' style='width:33%;font-size:2em;text-align:center;color:#F5F5F5;'><h2></h2><br/></td>
+				<td valign='top' align='center' style='width:33%;font-size:2em;text-align:center;color:#F5F5F5;'><h2></h2><br/></td>
+			</tr>
+			-->
+		</table>
+		<div class='roundedRectangle'>
+			<h2 style='font-size:2em;'><span style='color:#F5F5F5;'>&nbsp;&nbsp;&#42;In Development&nbsp;&nbsp;</span><br/><span style='color:#E46700;'>&#42;Released</span><br/></h2>
+		</div>
+		<br/><br/>
+	</div>
 	<!-- keep this at the end to speed up loading -->
     <script>
     	// We're doing this to make sure the animation doesn't screw up
