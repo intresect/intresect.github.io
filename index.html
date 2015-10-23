@@ -21,7 +21,6 @@
     <!-- jQuery and define functions -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
-    /**
     	function pageScroll() {
 			if (window.pageYOffset >= 375) {
 				$('#menuBoxDiv').css('position', 'fixed');
@@ -32,7 +31,6 @@
 				$('#menuBoxDiv').css('top', '375px');
 			}
 		}
-	*/
     </script>
 	
 	<!-- import the override -->
@@ -40,12 +38,11 @@
 	
   </head>
 
-  <!-- <body onscroll="pageScroll()"> -->
-  <body>
+<body onscroll="pageScroll()">
     <div class='boxDiv' id='fixedBoxDiv' align='center'>
     	<br/><a href="#"><img id='intresectLogo' src="img/intresect.min.png" /></a>
     	<h1>INTRESECT</h1>
-    	<p style='color:#F5F5F5;' id='intresectLine'>The Software Initiative</p><br/><br/><br/>
+    	<p style='color:#F5F5F5;' id='intresectLine'>The Software Initiative</p><br/><br/><br/><br/>
     	<!--
     	<a href="#about" class="navButton">About</a>
     	<span style="color:white;">&nbsp;&bull;&nbsp;</span>
@@ -57,9 +54,9 @@
     <div id='blackGradient'></div>
     <div class='boxDiv' id='menuBoxDiv'>
     	<a href="#about" class="navButton">About</a>
-    	<span style="color:white;">&nbsp;&bull;&nbsp;</span>
+    	<span style="color:black;">&nbsp;&bull;&nbsp;</span>
     	<a href="#projects" class="navButton">Projects</a>
-    	<span style="color:white;">&nbsp;&bull;&nbsp;</span>
+    	<span style="color:black;">&nbsp;&bull;&nbsp;</span>
     	<a href="#contact" class="navButton">Contact Us</a>
     </div>
     <div class='boxDiv' id='about'>
