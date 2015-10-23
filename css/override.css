@@ -19,6 +19,24 @@ h1, h2, h3, h4, h5 {
 a, p, li {
 	font-family: 'Roboto';
 }
+
+.boxDiv {
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	width: auto;
+}
+.boxDiv h1 {
+	font-size: 3.75em;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding-top: 0px;
+}
+.boxDiv p {
+	font-size: 1.5em;
+	margin-top: 0px;
+}
+
 #fixedBoxDiv {
 	color: #55FFFF;
 	position: fixed;
@@ -48,26 +66,17 @@ a, p, li {
 	top: 1550px;
 	background: #006C6C;
 	color: #F5F5F5;
+	height: 650px;
+}
+#contact {
+	position: absolute;
+	top: 2200px;
+	background: #F5F5F5;
+	color: #001919;
 }
 #about p {
 	color: #001919;
 	margin-top: 5px;
-}
-.boxDiv {
-	left: 0px;
-	right: 0px;
-	text-align: center;
-	width: auto;
-}
-.boxDiv h1 {
-	font-size: 3.75em;
-	margin-top: 0px;
-	margin-bottom: 5px;
-	padding-top: 0px;
-}
-.boxDiv p {
-	font-size: 1.5em;
-	margin-top: 0px;
 }
 .navButton {
 	color: #062121;
