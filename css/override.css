@@ -86,7 +86,7 @@ a, p, li {
 	-webkit-transition: color .5s;
 	-moz-transition: color .5s;
 }
-.navButton a:hover {
+.navButton:hover {
 	color: #EE0000;
 }
 
