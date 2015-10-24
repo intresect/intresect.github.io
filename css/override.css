@@ -68,17 +68,29 @@ a, p, li {
 	background: #F5F5F5;
 	z-index: 1;
 }
+#menuBoxDivideLine {
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    height:1px;
+    width:0px;
+    background-color:black;
+    transition:width .5s, left .5s;
+    -webkit-transition:width .5s, left .5s;
+}
 .navButton {
-	color: #062121;
+	color: #001919;
 	font-size: 2em;
 	text-decoration: none;
 	transition: color .5s;
 	-webkit-transition: color .5s;
 	-moz-transition: color .5s;
 }
+/* NOW USING jQUERY IN THE MAIN HTML FILE -- MODIFY THAT, NOT THIS
 .navButton a:hover {
 	color: #EE0000;
 }
+*/
 
 /* Section IV - container specifics */
 #about {
