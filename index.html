@@ -24,31 +24,18 @@
     	// Defines the Sticky NavBar
     	function pageScroll() {
 			if (window.pageYOffset >= 375) {
-				// Condensed the following into 2 lines, using a dictionary
-				// $('#menuBoxDiv').css('position', 'fixed');
-				// $('#menuBoxDiv').css('top', '0px');
-                // $('#menuBoxDivideLine').css('left', '0px');
-                // $('#menuBoxDivideLine').css('width', '100%');
-                $('#menuBoxDiv').css({'position': 'fixed', 'top': '0px'});
-				$('#menuBoxDivideLine').css({'left': '0px;', 'width': '100%'});
+				$('#menuBoxDiv').css('position', 'fixed');
+				$('#menuBoxDiv').css('top', '0px');
+                $('#menuBoxDivideLine').css('left', '0px');
+                $('#menuBoxDivideLine').css('width', '100%');
 			}
 			else {
-				// Did the same thing here
-				// $('#menuBoxDiv').css('position', 'absolute');
-				// $('#menuBoxDiv').css('top', '375px');
-                // $('#menuBoxDivideLine').css('left', '50%');
-                // $('#menuBoxDivideLine').css('width', '0px');
-                $('#menuBoxDiv').css({'position': 'absolute', 'top': '375px;'});
-				$('#menuBoxDivideLine').css({'left': '50%', 'width': '0px'});
+				$('#menuBoxDiv').css('position', 'absolute');
+				$('#menuBoxDiv').css('top', '375px');
+                $('#menuBoxDivideLine').css('left', '50%');
+                $('#menuBoxDivideLine').css('width', '0px');
 			}
 		}
-		// Changes the colors when you hover, then changes them back when you stop
-		$('#navButton').hover(function() {
-			$(this).css('color', '#006C6C');
-		});
-		$('#navButton').mouseout(function() {
-			$(this).css('color', '#001919');
-		});
     </script>
 	
 	<!-- import the override -->

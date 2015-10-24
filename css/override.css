@@ -86,11 +86,9 @@ a, p, li {
 	-webkit-transition: color .5s;
 	-moz-transition: color .5s;
 }
-/* NOW USING jQUERY IN THE MAIN HTML FILE -- MODIFY THAT, NOT THIS
 .navButton a:hover {
 	color: #EE0000;
 }
-*/
 
 /* Section IV - container specifics */
 #about {
