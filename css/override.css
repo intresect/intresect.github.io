@@ -67,6 +67,9 @@ a, p, li {
 	height: 47px;
 	background: #080808;
 	z-index: 1;
+	transition: background .5s;
+	-webkit-transition: background .5s;
+	-moz-transition: background .5s;
 }
 #menuBoxDivideLine {
     position: absolute;
