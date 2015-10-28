@@ -39,7 +39,7 @@ a, p, li {
 
 /* Section III - home/menu containers */
 #fixedBoxDiv {
-	color: #55FFFF;
+	color: #EF6C00;
 	position: fixed;
 	top: 0px;
 	height: 375px;
@@ -53,7 +53,7 @@ a, p, li {
 	top: 325px;
 	width: auto;
 	height:50px;
-	background: -moz-linear-gradient(top, rgba(8,8,8,0) 0%, #080808 100%); /* FF3.6+ */
+	background: -moz-linear-gradient(top, rgba(8,8,8,0) 0%, #080808 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,#080808));
 	background: -webkit-linear-gradient(top, rgba(8,8,8,0) 0%, #080808 100%);
 	background: -o-linear-gradient(top, rgba(8,8,8,0) 0%, #080808 100%);
@@ -65,21 +65,22 @@ a, p, li {
 	position: absolute;
 	top: 375px;
 	height: 47px;
-	background: #F5F5F5;
+	background: #080808;
 	z-index: 1;
 }
 #menuBoxDivideLine {
-    position:absolute;
-    bottom:0px;
-    left:50%;
-    height:1px;
-    width:0px;
-    background-color:black;
-    transition:width .5s, left .5s;
-    -webkit-transition:width .5s, left .5s;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    height: 1px;
+    width: 0px;
+    background-color: black;
+    transition: width .5s, left .5s;
+    -webkit-transition: width .5s, left .5s;
+    -moz-transition: width .5s, left .5s;
 }
 .navButton {
-	color: #001919;
+	color: #EF6C00;
 	font-size: 2em;
 	text-decoration: none;
 	transition: color .5s;
@@ -87,7 +88,7 @@ a, p, li {
 	-moz-transition: color .5s;
 }
 .navButton:hover {
-	color: #006C6C;
+	color: #F5F5F5;
 }
 
 /* Section IV - container specifics */
@@ -95,13 +96,13 @@ a, p, li {
 	position: absolute;
 	top: 425px;
 	background: #F5F5F5;
-	color: #062121;
+	color: #080808;
 	height: 1125px;
 }
 #projects {
 	position: absolute;
 	top: 1550px;
-	background: #006C6C;
+	background: #080808;
 	color: #F5F5F5;
 	height: 650px;
 }
@@ -112,12 +113,12 @@ a, p, li {
 	position: absolute;
 	top: 2200px;
 	background: #F5F5F5;
-	color: #001919;
+	color: #080808;
 }
 
 /* Section V - container elements */
 #about p {
-	color: #001919;
+	color: #080808;
 	margin-top: 5px;
 }
 #projects h1 {
@@ -125,9 +126,6 @@ a, p, li {
 }
 #projects h2 {
 	font-size: 2em;
-}
-#projects p {
-	font-weight: bold;
 }
 /* Section V - individual divs and their elements */
 .roundedRectangle {
