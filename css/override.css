@@ -107,14 +107,14 @@ a, p, li {
 	top: 1550px;
 	background: #080808;
 	color: #F5F5F5;
-	height: 650px;
+	height: 750px;
 }
 #services {
 	
 }
 #contact {
 	position: absolute;
-	top: 2200px;
+	top: 2300px;
 	background: #F5F5F5;
 	color: #080808;
 }
@@ -125,7 +125,7 @@ a, p, li {
 	margin-top: 5px;
 }
 #projects h1 {
-	color:#E46700;
+	color:#EF6C00;
 }
 #projects h2 {
 	font-size: 2em;
@@ -133,7 +133,7 @@ a, p, li {
 /* Section V - individual divs and their elements */
 .roundedRectangle {
 	border-radius: 25px;
-	border: 2px solid #E46700;
+	border: 2px solid #EF6C00;
 	display: inline-block;
 }
 .roundedRectangle h2 {
