@@ -25,6 +25,14 @@
     <script>
 
         $.browser.chrome = /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()); 
+        function toggleAscertain() {
+            $('#toggleFaderAscertain').fadeToggle(400, 'swing', function() {
+                toggleAscertain();
+            });
+        }
+        function mainPageLoaded() {
+            toggleAscertain();
+        }
     	// Defines the Sticky NavBar
     	function pageScroll() {
 			if (window.pageYOffset >= 375) {
@@ -135,7 +143,7 @@
 	
   </head>
 
-<body onscroll="pageScroll()">
+<body onscroll="pageScroll()" onload='mainPageLoaded()'>
     <div class='boxDiv' id='fixedBoxDiv' align='center'>
     	<br/><a href="#"><img id='intresectLogo' src="img/intresect.min.png" /></a>
     	<h1>INTRESECT</h1>
@@ -190,7 +198,7 @@
 					<p>The place where we showcase these projects and provide you with new information</p>
 				</td>
 				<td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'>
-					<h2>Ascertain¦</h2>
+					<h2>Ascertain<span id='toggleFaderAscertain'>|</span></h2>
 					<br/>
 					<p>An intelligent, community driven instant-answer app that eliminates the need for a search engine.  The more searches it performs, the more it learns</p>
 				</td>
