@@ -19,9 +19,12 @@
     </script>
     
     <!-- jQuery and define functions -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.browser.min.js"></script>
     <!-- FLAGGED -->
     <script>
+
+        $.browser.chrome = /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()); 
     	// Defines the Sticky NavBar
     	function pageScroll() {
 			if (window.pageYOffset >= 375) {
@@ -32,7 +35,16 @@
                         $('#menuBoxDivideLine').css('left', '0px');
                         $('#menuBoxDivideLine').css('width', '100%');
 
-                        $('#menuBoxDiv').css('background', '#F5F5F5');
+                        if ($.browser.chrome) {
+                            $('#menuBoxDiv').css('background', 'rgba(245,245,245,.85)');
+                        }
+                        else if ($.browser.webkit) {
+                            $('#menuBoxDiv').css('background', 'rgba(245,245,245,.33)');
+                        }
+                        else {
+                            $('#menuBoxDiv').css('background', 'rgba(245,245,245,.85)');
+                        }
+
 
                         $('.navButton').css('color', '#080808');
 
@@ -48,7 +60,15 @@
                         $('#menuBoxDivideLine').css('left', '0px');
                         $('#menuBoxDivideLine').css('width', '100%');
 
-                        $('#menuBoxDiv').css('background', '#008B8B');
+                        if ($.browser.chrome) {
+                            $('#menuBoxDiv').css('background', 'rgba(0,139,139,.85)');
+                        }
+                        else if ($.browser.webkit) {
+                            $('#menuBoxDiv').css('background', 'rgba(0,139,139,.33)');
+                        }
+                        else {
+                            $('#menuBoxDiv').css('background', 'rgba(0,139,139,.85)');
+                        }
 
                         $('.navButton').css('color', '#080808');
 
@@ -65,7 +85,15 @@
                     $('#menuBoxDivideLine').css('left', '0px');
                     $('#menuBoxDivideLine').css('width', '100%');
 
-                    $('#menuBoxDiv').css('background', '#F5F5F5');
+                    if ($.browser.chrome) {
+                        $('#menuBoxDiv').css('background', 'rgba(245,245,245,.85)');
+                    }
+                    else if ($.browser.webkit) {
+                        $('#menuBoxDiv').css('background', 'rgba(245,245,245,.33)');
+                        }
+                    else {
+                        $('#menuBoxDiv').css('background', 'rgba(245,245,245,.85)');
+                    }
 
                     $('.navButton').css('color', '#080808');
 

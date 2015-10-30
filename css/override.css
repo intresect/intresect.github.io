@@ -75,6 +75,7 @@ a, p, li {
 	transition: background .5s;
 	-webkit-transition: background .5s;
 	-moz-transition: background .5s;
+	-webkit-background-filter: blur(10px);
 }
 #menuBoxDivideLine {
     position: absolute;
@@ -85,7 +86,7 @@ a, p, li {
     background-color: black;
     transition: width .5s, left .5s;
     -webkit-transition: width .5s, left .5s;
-    -moz-transition: width .5s, left .5s;
+    -moz-transition: width .5s, left .5s
 }
 .navButton {
 	color: #080808;
