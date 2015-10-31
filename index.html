@@ -39,7 +39,7 @@
 				$('#menuBoxDiv').css('position', 'fixed');
 				$('#menuBoxDiv').css('top', '0px');
                 if (window.pageYOffset >= 1550) {
-                    if (window.pageYOffset >= 2300) {
+                    if (window.pageYOffset >= 2600) {
                         $('#menuBoxDivideLine').css('left', '0px');
                         $('#menuBoxDivideLine').css('width', '100%');
 
@@ -176,7 +176,7 @@
     	<table align='center' style='width:99%;'>
     		<tr align='center'>
     			<td align='center' class='boxTables'><h2>Devin</h2><br/><img src="img/devin.final.min.png"/></td>
-    			<td align='center' class='boxTables'><h2>Kylie</h2><br/><img src="img/transparent.min.png"/></td>
+    			<td align='center' class='boxTables'><h2>Tim</h2><br/><img src="img/transparent.min.png"/></td>
     			<td align='center' class='boxTables'><h2>Graham</h2><br/><img src="img/graham.final.min.png"/></td>
     		</tr>
     		<br/>
@@ -202,13 +202,22 @@
 					<br/>
 					<p>An intelligent, community driven instant-answer app that eliminates the need for a search engine.  The more searches it performs, the more it learns</p>
 				</td>
-				<td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'>
-					<h2>Phantom</h2>
+				<td valign='top' align='center' class='boxTables' style='color:#080808;'>
+					<h2>MORGAN</h2>
 					<br/>
-					<p>A truly unbreakable encryption system using random hashes as keys in a way unique to both the sender and receiver with implementations in multiple programming languages</p>
+					<p>A pseudo-AI chat program that asks users questions to learn its own answers.  Developed in collaboration with some of the early members of <a class='whiteLink' target='_blank' href="http://hackgician.github.io">Hackgician</a></p>
 				</td>
 			</tr>
 			<br/>
+            <tr align='center'>
+                <td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'>
+                    <h2>Phantom</h2>
+                    <br/>
+                    <p>A truly unbreakable encryption system using random hashes as keys in a way unique to both the sender and receiver with implementations in multiple programming languages</p>
+                </td>
+                <td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'></td>
+                <td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'></td>
+            </tr>
 		</table>
 		<div class='roundedRectangle'>
 			<h2><span style='color:#F5F5F5;'>&nbsp;&nbsp;&#42;In Development&nbsp;&nbsp;</span><br/><span style='color:#080808;'>&#42;Released</span><br/></h2>
@@ -228,6 +237,20 @@
     	// We're doing this to make sure the animation doesn't screw up
     	$('#intresectLine').addClass('animated fadeInUp');
     	$('#intresectLogo').addClass('animated fadeInDown');
+
+        $('.whiteLink').hover(function() {
+            $(this).css('color', '#080808');
+        });
+        $('.whiteLink').mouseout(function() {
+            $(this).css('color', '#F5F5F5');
+        });
+
+        $('.blackLink').hover(function() {
+            $(this).css('color', '#F5F5F5');
+        });
+        $('.blackLink').hover(function() {
+            $(this).css('color', '#080808');
+        });
     </script>
   </body>
 </html>

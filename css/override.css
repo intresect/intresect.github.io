@@ -113,14 +113,14 @@ a, p, li {
 	top: 1550px;
 	background: #008B8B;
 	color: #F5F5F5;
-	height: 750px;
+	height: 1050px;
 }
 #services {
 	
 }
 #contact {
 	position: absolute;
-	top: 2300px;
+	top: 2600px;
 	background: #F5F5F5;
 	color: #080808;
 }
@@ -146,3 +146,19 @@ a, p, li {
 	font-size:2em;
 }
 
+/* Section VI - other */
+.whiteLink {
+	color: #F5F5F5;
+	text-decoration: none;
+	transition: color .5s;
+	-webkit-transition: color .5s;
+	-moz-transition: color .5s;
+}
+
+.blackLink {
+	color: #080808;
+	text-decoration: none;
+	transition: color .5s;
+	-webkit-transition: color .5s;
+	-moz-transition: color .5s;
+}
