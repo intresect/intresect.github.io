@@ -46,7 +46,7 @@ a, p, li {
 	position: fixed;
 	top: 0px;
 	height: 375px;
-	background: url('../img/cyanish.png');
+	background: #008B8B;
     z-index:-1;
 }
 
