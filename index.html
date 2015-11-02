@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,12 +10,12 @@
     <link rel="icon" href="img/favicon.ico">
 
     <title>Intresect Software Intitative</title>
-	
-	<!-- import the animation files -->
-	<link rel='stylesheet' href="css/animate.css">
-	<script src="js/wow.min.js"></script>
-	<script>
-    	new WOW().init();
+    
+    <!-- import the animation files -->
+    <link rel='stylesheet' href="css/animate.css">
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
     </script>
     
     <!-- jQuery and define functions -->
@@ -33,11 +33,11 @@
         function mainPageLoaded() {
             toggleAscertain();
         }
-    	// Defines the Sticky NavBar
-    	function pageScroll() {
-			if (window.pageYOffset >= 375) {
-				$('#menuBoxDiv').css('position', 'fixed');
-				$('#menuBoxDiv').css('top', '0px');
+        // Defines the Sticky NavBar
+        function pageScroll() {
+            if (window.pageYOffset >= 375) {
+                $('#menuBoxDiv').css('position', 'fixed');
+                $('#menuBoxDiv').css('top', '0px');
                 if (window.pageYOffset >= 1550) {
                     if (window.pageYOffset >= 2600) {
                         $('#menuBoxDivideLine').css('left', '0px');
@@ -116,10 +116,10 @@
                         $(this).css('color', '#080808');
                     });
                 }
-			}
-			else {
-				$('#menuBoxDiv').css('position', 'absolute');
-				$('#menuBoxDiv').css('top', '375px');
+            }
+            else {
+                $('#menuBoxDiv').css('position', 'absolute');
+                $('#menuBoxDiv').css('top', '375px');
                 $('#menuBoxDivideLine').css('left', '50%');
                 $('#menuBoxDivideLine').css('width', '0px');
 
@@ -134,81 +134,81 @@
                 $('.navButton').mouseout(function() {
                     $(this).css('color', '#080808');
                 });
-			}
-		}
+            }
+        }
     </script>
-	
-	<!-- import the override -->
-	<link rel='stylesheet' href="css/override.css">
-	
-  </head>
+    
+    <!-- import the override -->
+    <link rel='stylesheet' href="css/override.css">
+    
+</head>
 
 <body onscroll="pageScroll()" onload='mainPageLoaded()'>
     <div class='boxDiv' id='fixedBoxDiv' align='center'>
-    	<br/><a href="#"><img id='intresectLogo' src="img/intresect.min.png" /></a>
-    	<h1>INTRESECT</h1>
-    	<p style='color:#F5F5F5;' id='intresectLine'>The Software Initiative</p><br/><br/><br/><br/>
-    	<!--
-    	<a href="#about" class="navButton">About</a>
-    	<span style="color:white;">&nbsp;&bull;&nbsp;</span>
-    	<a href="#projects" class="navButton">Projects</a>
-    	<span style="color:white;">&nbsp;&bull;&nbsp;</span>
-    	<a href="#contact" class="navButton">Contact Us</a>
-    	-->
+        <br/><a href="#"><img id='intresectLogo' src="img/intresect.min.png" /></a>
+        <h1>INTRESECT</h1>
+        <p style='color:#F5F5F5;' id='intresectLine'>The Software Initiative</p><br/><br/><br/><br/>
+        <!--
+        <a href="#about" class="navButton">About</a>
+        <span style="color:white;">&nbsp;&bull;&nbsp;</span>
+        <a href="#projects" class="navButton">Projects</a>
+        <span style="color:white;">&nbsp;&bull;&nbsp;</span>
+        <a href="#contact" class="navButton">Contact Us</a>
+        -->
     </div>
     <div id='blackGradient'></div>
     <div class='boxDiv' id='menuBoxDiv'>
-    	<a href="#about" class="navButton">About</a>
-    	<span class='navBullet' style="color:WhiteSmoke;">&nbsp;&bull;&nbsp;</span>
-    	<a href="#projects" class="navButton">Projects</a>
-    	<span class='navBullet' style="color:WhiteSmoke;">&nbsp;&bull;&nbsp;</span>
-    	<a href="#services" class="navButton">Consider Us</a>
-    	<span class='navBullet' style="color:WhiteSmoke;">&nbsp;&bull;&nbsp;</span>
-    	<a href="#contact" class="navButton">Social</a>
+        <a href="#about" class="navButton">About</a>
+        <span class='navBullet' style="color:WhiteSmoke;">&nbsp;&bull;&nbsp;</span>
+        <a href="#projects" class="navButton">Projects</a>
+        <span class='navBullet' style="color:WhiteSmoke;">&nbsp;&bull;&nbsp;</span>
+        <a href="#services" class="navButton">Consider Us</a>
+        <span class='navBullet' style="color:WhiteSmoke;">&nbsp;&bull;&nbsp;</span>
+        <a href="#contact" class="navButton">Social</a>
         <div id="menuBoxDivideLine"></div>
     </div>
     <div class='boxDiv' id='about'>
-    	<h1><br/>It's all black and white</h1>
-    	<p>We're just a small development team, innovating and adapting to the modern internet one website at a time.<br/>The web is about to change dramatically, and we're ready.</p>
-    	<br/>
-    	<h1 style='font-size:2.5em;'>The Intresect Team</h1>
-    	<br/>
-    	<table align='center' style='width:99%;'>
-    		<tr align='center'>
-    			<td align='center' class='boxTables'><h2>Devin</h2><br/><img src="img/devin.final.min.png"/></td>
-    			<td align='center' class='boxTables'><h2>Tim</h2><br/><img src="img/transparent.min.png"/></td>
-    			<td align='center' class='boxTables'><h2>Graham</h2><br/><img src="img/graham.final.min.png"/></td>
-    		</tr>
-    		<br/>
-    		<tr align='center'>
-    			<td align='center' class='boxTables'><h2>Ethan</h2><br/><img src="img/transparent.min.png"/></td>
-    			<td align='center' class='boxTables'><h2>Sunny</h2><br/><img src="img/sunny.final.min.png"/></td>
-    			<td align='center' class='boxTables'><h2>John Grady</h2><br/><img src="img/transparent.min.png"/></td>
-    		</tr>
-    	</table>
+        <h1><br/>It's all black and white</h1>
+        <p>We're just a small development team, innovating and adapting to the modern internet one website at a time.<br/>The web is about to change dramatically, and we're ready.</p>
+        <br/>
+        <h1 style='font-size:2.5em;'>The Intresect Team</h1>
+        <br/>
+        <table align='center' style='width:99%;'>
+            <tr align='center'>
+                <td align='center' class='boxTables'><h2>Devin</h2><br/><img src="img/devin.final.min.png"/></td>
+                <td align='center' class='boxTables'><h2>Tim</h2><br/><img src="img/transparent.min.png"/></td>
+                <td align='center' class='boxTables'><h2>Graham</h2><br/><img src="img/graham.final.min.png"/></td>
+            </tr>
+            <br/>
+            <tr align='center'>
+                <td align='center' class='boxTables'><h2>Ethan</h2><br/><img src="img/transparent.min.png"/></td>
+                <td align='center' class='boxTables'><h2>Sunny</h2><br/><img src="img/sunny.final.min.png"/></td>
+                <td align='center' class='boxTables'><h2>John Grady</h2><br/><img src="img/transparent.min.png"/></td>
+            </tr>
+        </table>
     </div>
-	<div class='boxDiv' id='projects'>
-		<h1><br/>Our Projects</h1>
+    <div class='boxDiv' id='projects'>
+        <h1><br/>Our Projects</h1>
         <p style='width:60%;margin-left:20%;'>Intresect specializes in website design, although in addition to web apps we have developed some desktop software in the past.  We also provide website creation services.
-		<table align='center' style='width:99%';>
-			<tr align='center'>
-				<td valign='top' align='center' class='boxTables' style='color:#080808;'>
-					<h2>Website</h2>
-					<br/>
-					<p>The place where we showcase these projects and provide you with new information</p>
-				</td>
-				<td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'>
-					<h2>Ascertain<span id='toggleFaderAscertain'>_</span></h2>
-					<br/>
-					<p>An intelligent, community driven instant-answer app that eliminates the need for a search engine.  The more searches it performs, the more it learns</p>
-				</td>
-				<td valign='top' align='center' class='boxTables' style='color:#080808;'>
-					<h2>MORGAN</h2>
-					<br/>
-					<p>A pseudo-AI chat program that asks users questions to learn its own answers.  Developed in collaboration with some of the early members of <a class='whiteLink' target='_blank' href="http://hackgician.github.io">Hackgician</a></p>
-				</td>
-			</tr>
-			<br/>
+        <table align='center' style='width:99%';>
+            <tr align='center'>
+                <td valign='top' align='center' class='boxTables' style='color:#080808;'>
+                    <h2>Website</h2>
+                    <br/>
+                    <p>The place where we showcase these projects and provide you with new information</p>
+                </td>
+                <td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'>
+                    <h2>Ascertain<span id='toggleFaderAscertain'>_</span></h2>
+                    <br/>
+                    <p>An intelligent, community driven instant-answer app that eliminates the need for a search engine.  The more searches it performs, the more it learns</p>
+                </td>
+                <td valign='top' align='center' class='boxTables' style='color:#080808;'>
+                    <h2>MORGAN</h2>
+                    <br/>
+                    <p>A pseudo-AI chat program that asks users questions to learn its own answers.  Developed in collaboration with some of the early members of <a class='whiteLink' target='_blank' href="http://hackgician.github.io">Hackgician</a></p>
+                </td>
+            </tr>
+            <br/>
             <tr align='center'>
                 <td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'>
                     <h2>Phantom</h2>
@@ -218,25 +218,25 @@
                 <td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'></td>
                 <td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'></td>
             </tr>
-		</table>
-		<div class='roundedRectangle'>
-			<h2><span style='color:#F5F5F5;'>&nbsp;&nbsp;&#42;In Development&nbsp;&nbsp;</span><br/><span style='color:#080808;'>&#42;Released</span><br/></h2>
-		</div>
-		<br/><br/>
-	</div>
-	<div class='boxDiv' id='contact'>
-		<br/>
-		<h1 style='color:#080808;'>Social</h1>
-		<br/>
-		<a href="http://twitter.com/intresectsi"><img src="img/twitter.min.png"/></a>&nbsp;
-		<p>intresectsi@gmail.com</p>
-		<br/><br/>
-	</div>
-	<!-- keep this at the end to speed up loading -->
+        </table>
+        <div class='roundedRectangle'>
+            <h2><span style='color:#F5F5F5;'>&nbsp;&nbsp;&#42;In Development&nbsp;&nbsp;</span><br/><span style='color:#080808;'>&#42;Released</span><br/></h2>
+        </div>
+        <br/><br/>
+    </div>
+    <div class='boxDiv' id='contact'>
+        <br/>
+        <h1 style='color:#080808;'>Social</h1>
+        <br/>
+        <a href="http://twitter.com/intresectsi"><img src="img/twitter.min.png"/></a>&nbsp;
+        <p>intresectsi@gmail.com</p>
+        <br/><br/>
+    </div>
+    <!-- keep this at the end to speed up loading -->
     <script>
-    	// We're doing this to make sure the animation doesn't screw up
-    	$('#intresectLine').addClass('animated fadeInUp');
-    	$('#intresectLogo').addClass('animated fadeInDown');
+        // We're doing this to make sure the animation doesn't screw up
+        $('#intresectLine').addClass('animated fadeInUp');
+        $('#intresectLogo').addClass('animated fadeInDown');
 
         $('.whiteLink').hover(function() {
             $(this).css('color', '#080808');
@@ -252,5 +252,5 @@
             $(this).css('color', '#080808');
         });
     </script>
-  </body>
+</body>
 </html>
