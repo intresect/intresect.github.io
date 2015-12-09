@@ -96,6 +96,11 @@ a, p, li {
 	-webkit-transition: color .5s;
 	-moz-transition: color .5s;
 }
+.navBullet {
+	transition: color, .5s;
+	-webkit-transition: color, .5s;
+	-moz-transition: color, .5s;
+}
 .navButton:hover {
 	color: #F5F5F5;
 }
