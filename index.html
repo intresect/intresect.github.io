@@ -21,132 +21,11 @@
     <!-- jQuery and define functions -->
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/jquery.browser.min.js"></script>
+    <script src="x/definitions.js"></script>
     <script>
 
         // Gives us a way to detect Chrome WebKit vs. Safari WebKit
         $.browser.chrome = /chrom(e|ium)/.test(navigator.userAgent.toLowerCase());
-
-        // Makes Ascertain_ animate itself
-        function toggleAscertain() {
-            $('#toggleFaderAscertain').fadeToggle(400, 'swing', function() {
-                toggleAscertain();
-            });
-        }
-        function mainPageLoaded() {
-            toggleAscertain();
-        }
-
-        // Defines the Sticky NavBar
-        function pageScroll() {
-            if (window.pageYOffset >= 375) {
-
-                $('#menuBoxDiv').css('position', 'fixed');
-                $('#menuBoxDiv').css('top', '0px');
-
-                if (window.pageYOffset >= 1550) {
-
-                    if (window.pageYOffset >= 2600) {
-
-                        $('#menuBoxDivideLine').css('left', '0px');
-                        $('#menuBoxDivideLine').css('width', '100%');
-
-                        if ($.browser.chrome) {
-                            $('#menuBoxDiv').css('background', 'rgba(245,245,245,.85)');
-                        }
-                        else if ($.browser.webkit) {
-                            $('#menuBoxDiv').css('background', 'rgba(245,245,245,.33)');
-                        }
-                        else {
-                            $('#menuBoxDiv').css('background', 'rgba(245,245,245,.85)');
-                        }
-
-                        $('.navBullet').css('color', '#080808');
-
-                        $('.navButton').hover(function() {
-                            $(this).css('color', '#008B8B');
-                        });
-                        $('.navButton').mouseout(function() {
-                            $(this).css('color', '#080808');
-                        });
-
-                    }
-
-                    else {
-
-                        $('#menuBoxDivideLine').css('left', '0px');
-                        $('#menuBoxDivideLine').css('width', '100%');
-
-                        if ($.browser.chrome) {
-                            $('#menuBoxDiv').css('background', 'rgba(0,139,139,.85)');
-                        }
-                        else if ($.browser.webkit) {
-                            $('#menuBoxDiv').css('background', 'rgba(0,139,139,.33)');
-                        }
-                        else {
-                            $('#menuBoxDiv').css('background', 'rgba(0,139,139,.85)');
-                        }
-
-                        $('.navBullet').css('color', '#F5F5F5');
-
-                        $('.navButton').hover(function() {
-                            $(this).css('color', '#F5F5F5');
-                        });
-                        $('.navButton').mouseout(function() {
-                            $(this).css('color', '#080808');
-                        });
-
-                    }
-
-                }
-
-                else {
-
-                    $('#menuBoxDivideLine').css('left', '0px');
-                    $('#menuBoxDivideLine').css('width', '100%');
-
-                    if ($.browser.chrome) {
-                        $('#menuBoxDiv').css('background', 'rgba(245,245,245,.85)');
-                    }
-                    else if ($.browser.webkit) {
-                        $('#menuBoxDiv').css('background', 'rgba(245,245,245,.33)');
-                    }
-                    else {
-                        $('#menuBoxDiv').css('background', 'rgba(245,245,245,.85)');
-                    }
-
-                    $('.navBullet').css('color', '#080808');
-
-                    $('.navButton').hover(function() {
-                        $(this).css('color', '#008B8B');
-                    });
-                    $('.navButton').mouseout(function() {
-                        $(this).css('color', '#080808');
-                    });
-
-                }
-
-            }
-            else {
-
-                $('#menuBoxDiv').css('position', 'absolute');
-                $('#menuBoxDiv').css('top', '375px');
-                $('#menuBoxDiv').css('background', '#008B8B');
-
-                $('#menuBoxDivideLine').css('left', '50%');
-                $('#menuBoxDivideLine').css('width', '0px');
-
-                $('.navBullet').css('color', '#F5F5F5');
-
-                $('.navButton').hover(function() {
-                    $(this).css('color', '#F5F5F5');
-                });
-                $('.navButton').mouseout(function() {
-                    $(this).css('color', '#080808');
-                });
-
-            }
-
-        }
 
     </script>
     
@@ -158,12 +37,12 @@
 <body onscroll="pageScroll()" onload='mainPageLoaded()'>
 
     <div class='boxDiv' id='fixedBoxDiv' align='center'> 
-        <br/>
-        <a href="#"><img id='intresectLogo' src="img/snowflake.blur.min.png" /></a>
-        <p style='color:#F5F5F5;margin-bottom:5px;' id='intresectLine'>Happy Holidays From</p>
+        <br/><br/>
+        <a href="#"><img id='intresectLogo' src="img/intresect.min.png" /></a>
+        <br/><br/>
         <h1>INTRESECT</h1>
-        <br/><br/><br/><br/>
-        <!-- p style='color:#F5F5F5;' id='intresectLine'>The Software Initiative</p><br/><br/><br/><br/ -->
+        <br/>
+        <p style='color:#F5F5F5;' id='intresectLine'></p><br/><br/><br/><br/>
     </div>
 
     <div id='blackGradient'></div>
@@ -181,8 +60,8 @@
 
     <div class='boxDiv' id='about'>
 
-        <h1><br/>It's all black and white</h1>
-        <p>We're just a small development team, innovating and adapting to the modern internet one website at a time.<br/>The web is about to change dramatically, and we're ready.</p>
+        <h1><br/>Hi, we're Intresect</h1>
+        <p>We're just a small development team, innovating and adapting to the modern internet one website at a time.</p>
         <br/>
         <h1 style='font-size:2.5em;'>The Intresect Team</h1>
         <br/>
@@ -204,24 +83,24 @@
 
     <div class='boxDiv' id='projects'>
         <h1><br/>Our Projects</h1>
-        <p style='width:60%;margin-left:20%;'>Intresect specializes in website design, although in addition to web apps we have developed some desktop software in the past.  We also provide website creation services.</p>
+        <p style='width:60%;margin-left:20%;'>Intresect specializes in website design, although we have teamed up with others to create some desktop software in the past.</p>
 
         <table align='center' style='width:99%';>
             <tr align='center'>
-                <td valign='top' align='center' class='boxTables' style='color:#080808;'>
-                    <h2>Website</h2>
+                <td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'>
+                    <h2>Intresect Blog &#42;</h2>
                     <br/>
                     <p>The place where we showcase these projects and provide you with new information</p>
                 </td>
 
                 <td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'>
-                    <h2>Ascertain<span id='toggleFaderAscertain'>_</span></h2>
+                    <h2>Ascertain<span id='toggleFaderAscertain'>_</span> &#42;</h2>
                     <br/>
                     <p>An intelligent, community driven instant-answer app that eliminates the need for a search engine.  The more searches it performs, the more it learns</p>
                 </td>
 
-                <td valign='top' align='center' class='boxTables' style='color:#080808;'>
-                    <h2>Forsyn</h2>
+                <td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'>
+                    <h2>Forsyn <span style='color:#080808;'>&#42;</span></h2>
                     <br/>
                     <p>The Forsyn Project is an Intresect-created set of design principles currently used in some student-made Providence High School websites</p>
                 </td>
@@ -231,7 +110,7 @@
 
             <tr align='center'>
                 <td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'>
-                    <h2>Phantom</h2>
+                    <h2>Phantom &#42;</h2>
                     <br/>
                     <p>A truly unbreakable encryption system using random hashes as keys in a way unique to both the sender and receiver with implementations in multiple programming languages</p>
                 </td>
