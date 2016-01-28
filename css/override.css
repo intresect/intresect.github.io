@@ -46,26 +46,10 @@ a, p, li {
 	position: fixed;
 	top: 0px;
 	height: 425px;
-	/* background: #008B8B; */
-	background: url('../img/abstract.cube.max.png');
+	background-color: #FFFFFF;
+	background: url('../img/abstract.cube.white.min.jpg');
     z-index:-1;
 }
-
-/*
-#blackGradient {
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	top: 325px;
-	width: auto;
-	height:50px;
-	background: -moz-linear-gradient(top, rgba(0,139,139,0) 0%, #008B8B 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,139,139,0)), color-stop(100%,#008B8B));
-	background: -webkit-linear-gradient(top, rgba(0,139,139,0) 0%, #008B8B 100%);
-	background: -o-linear-gradient(top, rgba(0,139,139,0) 0%, #008B8B 100%);
-	background: -ms-linear-gradient(top, rgba(0,139,139,0) 0%, #008B8B 100%);
-	background: linear-gradient(to bottom, rgba(0,139,139,0) 0%, #008B8B 100%);
-} */
 
 #blackGradient {
 	position: absolute;
@@ -131,14 +115,14 @@ a, p, li {
 	top: 425px;
 	background: #F5F5F5;
 	color: #080808;
-	height: 1125px;
+	height: 1175px;
 }
 #projects {
 	position: absolute;
-	top: 1550px;
-	background: url('../img/abstract.cube.max.png');
+	top: 1600px;
+	background: #008B8B;
 	color: #F5F5F5;
-	height: 1050px;
+	height: 750px;
 	font-weight: bold;
 }
 #services {
@@ -146,7 +130,7 @@ a, p, li {
 }
 #contact {
 	position: absolute;
-	top: 2600px;
+	top: 2350px;
 	background: #F5F5F5;
 	color: #080808;
 }

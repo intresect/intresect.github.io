@@ -15,9 +15,9 @@ function pageScroll() {
         $('#menuBoxDiv').css('position', 'fixed');
         $('#menuBoxDiv').css('top', '0px');
 
-        if (window.pageYOffset >= 1550) {
+        if (window.pageYOffset >= 1600) {
 
-            if (window.pageYOffset >= 2600) {
+            if (window.pageYOffset >= 2350) {
 
                 $('#menuBoxDivideLine').css('left', '0px');
                 $('#menuBoxDivideLine').css('width', '100%');
@@ -49,13 +49,13 @@ function pageScroll() {
                 $('#menuBoxDivideLine').css('width', '100%');
 
                 if ($.browser.chrome) {
-                    $('#menuBoxDiv').css('background', 'rgba(85,133,171,.85)');
+                    $('#menuBoxDiv').css('background', 'rgba(0,140,140,.85)');
                 }
                 else if ($.browser.webkit) {
-                    $('#menuBoxDiv').css('background', 'rgba(85,133,171,.33)');
+                    $('#menuBoxDiv').css('background', 'rgba(0,140,140,.33)');
                 }
                 else {
-                    $('#menuBoxDiv').css('background', 'rgba(85,133,171,.85)');
+                    $('#menuBoxDiv').css('background', 'rgba(0,140,140,.85)');
                 }
 
                 $('.navBullet').css('color', '#F5F5F5');
