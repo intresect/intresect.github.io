@@ -35,7 +35,7 @@ function pageScroll() {
                 $('.navBullet').css('color', '#080808');
 
                 $('.navButton').hover(function() {
-                    $(this).css('color', '#008B8B');
+                    $(this).css('color', '#26B5BF');
                 });
                 $('.navButton').mouseout(function() {
                     $(this).css('color', '#080808');
@@ -49,13 +49,13 @@ function pageScroll() {
                 $('#menuBoxDivideLine').css('width', '100%');
 
                 if ($.browser.chrome) {
-                    $('#menuBoxDiv').css('background', 'rgba(0,140,140,.85)');
+                    $('#menuBoxDiv').css('background', 'rgba(38,181,191,.85)');
                 }
                 else if ($.browser.webkit) {
-                    $('#menuBoxDiv').css('background', 'rgba(0,140,140,.33)');
+                    $('#menuBoxDiv').css('background', 'rgba(38,181,191,.33)');
                 }
                 else {
-                    $('#menuBoxDiv').css('background', 'rgba(0,140,140,.85)');
+                    $('#menuBoxDiv').css('background', 'rgba(38,181,191,.85)');
                 }
 
                 $('.navBullet').css('color', '#F5F5F5');
@@ -89,7 +89,7 @@ function pageScroll() {
             $('.navBullet').css('color', '#080808');
 
             $('.navButton').hover(function() {
-                $(this).css('color', '#008B8B');
+                $(this).css('color', '#26B5BF');
             });
             $('.navButton').mouseout(function() {
                 $(this).css('color', '#080808');
@@ -102,8 +102,8 @@ function pageScroll() {
 
         $('#menuBoxDiv').css('position', 'absolute');
         $('#menuBoxDiv').css('top', '375px');
-        $('#menuBoxDiv').css('background', 'rgba(85,133,171,.8)');
-        //$('#menuBoxDiv').css('background', '#008B8B');
+        $('#menuBoxDiv').css('background', 'rgba(38,181,191,.7)');
+        //$('#menuBoxDiv').css('background', '#26B5BF');
 
         $('#menuBoxDivideLine').css('left', '50%');
         $('#menuBoxDivideLine').css('width', '0px');
