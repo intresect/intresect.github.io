@@ -53,8 +53,8 @@ a, p, li {
 	position: fixed;
 	top: 0px;
 	height: 425px;
-	background-color: #FFFFFF;
-	background: url('../img/abstract.cube.white.teal.min.jpg');
+	background: #26B5BF;
+	/* background: url('../img/abstract.cube.white.teal.min.jpg'); */
     z-index:-1;
 }
 
