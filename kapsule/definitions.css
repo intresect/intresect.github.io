@@ -1,0 +1,116 @@
+@import url(http://bit.ly/1RmvUQ0); /* Sans */
+@import url(http://bit.ly/1GodBcP); /* Roboto (The Android Font) */
+
+h1, h2, h3, h4, h5 {
+	font-family: 'PT Sans';
+}
+
+a, p, li {
+	font-family: 'Roboto';
+}
+
+body {
+	background-color:black;
+}
+
+.boxDiv p {
+	margin-top: 0px;
+}
+.boxDiv h1 {
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding-top: 0px;
+}
+
+#fixedBoxDiv {
+	color: #080808;
+	position: fixed;
+	top: 0px;
+	height: 425px;
+	background: #26B5BF;
+	/* background: url('../img/abstract.cube.white.teal.min.jpg'); */
+    z-index:-1;
+}
+
+#menuBoxDiv {
+	/*
+	padding-top: 3px;
+	position: absolute;
+	top: 375px;
+	height: 47px;
+	*/
+	height: 49px;
+	/*
+	background: #26B5BF;
+	*/
+	background: rgba(38,181,191,.7);
+	z-index: 1;
+	transition: background .5s;
+	-webkit-transition: background .5s;
+	-moz-transition: background .5s;
+	-webkit-backdrop-filter: blur(30px);
+}
+#menuBoxDivideLine {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.0;
+    z-index: 3;
+    transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+}
+.navButton {
+	color: #080808;
+	font-size: 2em;
+	text-decoration: none;
+	transition: color .5s;
+	-webkit-transition: color .5s;
+	-moz-transition: color .5s;
+}
+.navBullet {
+	transition: color, .5s;
+	-webkit-transition: color, .5s;
+	-moz-transition: color, .5s;
+}
+.navButton:hover {
+	color: #F5F5F5;
+}
+
+#shadeGrad {
+	position: absolute;
+	top: 325px;
+	background: -moz-linear-gradient(top, rgba(38,181,191,0) 0%, rgba(38,181,191,.7) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(38,181,191,0)), color-stop(100%,rgba(38,181,191,.7)));
+	background: -webkit-linear-gradient(top, rgba(38,181,191,0) 0%, rgba(38,181,191,.7) 100%);
+	background: -o-linear-gradient(top, rgba(38,181,191,0) 0%, rgba(85,133,170,.7) 100%);
+	background: -ms-linear-gradient(top, rgba(38,181,191,0) 0%, rgba(38,181,191,.7) 100%);
+	background: linear-gradient(to bottom, rgba(38,181,191,0) 0%, rgba(38,181,191,.7) 100%);
+}
+
+#about {
+	background: #F5F5F5;
+	color: #080808;
+	height: 1175px;
+}
+#projects {
+	background: #26B5BF;
+	color: #F5F5F5;
+	height: 750px;
+	font-weight: bold;
+}
+#social {
+	background: #F5F5F5;
+	color: #080808;
+}
+
+#about p {
+	color: #080808;
+	margin-top: 5px;
+}
+#projects h1 {
+	color:#080808;
+}
+#projects h2 {
+	font-size: 2em;
+}

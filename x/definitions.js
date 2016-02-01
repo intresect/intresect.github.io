@@ -13,7 +13,7 @@ function mainPageLoaded() {
 function pageScroll() {
     if (window.pageYOffset >= 375) {
 
-        $('#blankDiv').css('height', '424');
+        $('#blankSpacer').css('height', '424');
         $('#menuBoxDiv').css('position', 'fixed');
         $('#menuBoxDiv').css('top', '0px');
         $('#menuBoxDivideLine').css('position', 'fixed');
@@ -101,7 +101,7 @@ function pageScroll() {
     }
     else {
 
-        $('#blankDiv').css('height', '375');
+        $('#blankSpacer').css('height', '375');
         $('#menuBoxDiv').css('position', 'static');
         $('#menuBoxDiv').css('top', '375px');
         $('#menuBoxDiv').css('background', 'rgba(38,181,191,.7)');

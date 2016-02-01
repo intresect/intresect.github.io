@@ -30,7 +30,10 @@
     </script>
     
     <!-- import the override -->
-    <link rel='stylesheet' href="css/override.css">
+    <!-- link rel='stylesheet' href="css/override.css" -->
+    <link rel='stylesheet' href="kapsule/kapsule.css">
+    <link rel='stylesheet' href="kapsule/override.css">
+    <link rel='stylesheet' href="css/definitions.css">
     
 </head>
 
@@ -45,9 +48,9 @@
         <p style='color:#F5F5F5;' id='intresectLine'></p><br/><br/><br/><br/>
     </div>
 
-    <div id='blackGradient'></div>
+    <div class='gradient50' id='shadeGrad'></div>
 
-    <div id='blankDiv'></div>
+    <div class='blankDiv' id='blankSpacer' style='height:375px;'></div>
 
     <div class='boxDiv' id='menuBoxDiv'>
         <a href="#about" class="navButton">About</a>
@@ -67,11 +70,11 @@
         <br/>
         <br/>
 
-        <table align='center' style='width:99%;'>
+        <table align='center' class='boxTable'>
             <tr align='center'>
-                <td align='center' class='boxTables'><h2>Devin</h2><br/><img src="img/devin.final.min.png"/></td>
-                <td align='center' class='boxTables'><h2>John Grady</h2><br/><img src="img/john.final.min.png"/></td>
-                <td align='center' class='boxTables'><h2>Graham</h2><br/><img src="img/graham.final.min.png"/></td>
+                <td align='center' class='boxTableThird'><h2>Devin</h2><br/><img src="img/devin.final.min.png"/></td>
+                <td align='center' class='boxTableThird'><h2>John Grady</h2><br/><img src="img/john.final.min.png"/></td>
+                <td align='center' class='boxTableThird'><h2>Graham</h2><br/><img src="img/graham.final.min.png"/></td>
             </tr>
 
             <br/>
@@ -86,29 +89,29 @@
         <h1><br/>Our Projects</h1>
         <p style='width:60%;margin-left:20%;'>Intresect specializes in web apps and design, although some of us have teamed up with others to create desktop software in the past.</p>
 
-        <table align='center' style='width:99%';>
+        <table align='center' class='boxTable'>
             <tr align='center'>
-                <td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'>
+                <td valign='top' class='boxTableThird' style='color:#F5F5F5;'>
                     <h2>Phantom</h2>
                     <br/>
                     <p>A truly unbreakable encryption system using random hashes as keys in a way unique to both the sender and receiver with implementations in multiple programming languages</p>
                 </td>
 
-                <td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'>
+                <td valign='top' align='center' class='boxTableThird' style='color:#F5F5F5;'>
                     <h2>Ascertain<span id='toggleFaderAscertain'>_</span></h2>
                     <br/>
                     <p>An intelligent, community driven instant-answer app that eliminates the need for a search engine.  The more searches it performs, the more it learns</p>
                 </td>
 
-                <td valign='top' align='center' class='boxTables' style='color:#F5F5F5;'>
-                    <h2>Forsyn <span style='color:#080808;'></span></h2>
+                <td valign='top' align='center' class='boxTableThird' style='color:#F5F5F5;'>
+                    <h2>Kapsule</h2>
                     <br/>
                     <p>A light CSS container library adhering to modern design principles for clean, intuitive webpage layouts.</p>
                 </td>
             </tr>
         </table>
 
-        <div class='roundedRectangle'>
+        <div class='roundedRectangle rrLight'>
             <h2><span style='color:#F5F5F5;'>&nbsp;&nbsp;&#42;In Development&nbsp;&nbsp;</span><br/><span style='color:#080808;'>&#42;Released</span><br/></h2>
         </div>
 
