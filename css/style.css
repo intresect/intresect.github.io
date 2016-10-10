@@ -1,5 +1,95 @@
 @import 'https://fonts.googleapis.com/css?family=Ubuntu';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300';
+
+/* Accent Colors */
+/* ORANGE:  #F55E18 */
+/* TEAL  :  #18AFF5 */
+
+/* Light Colors */
+/* Orange:  #E06841 */
+/* Teal  :  #41B9E0 */
+
+html, body {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
 
 body {
 	font-family: 'Ubuntu';
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+section {
+	height: auto;
+	overflow: hidden;
+	padding: 75px;
+	margin: 0px;
+	text-align: center;
+}
+
+#bgLayer {
+	position: fixed;
+	padding: 0px;
+	z-index: -1;
+}
+
+#topSection {
+	background-color: rgba(65, 185, 224, 0.75);
+	/* background-color: #41B9E0; */
+	color: #F5F5F5;
+	padding-bottom: 25px;
+}
+
+/*
+#intresectWord {
+	transition: color 1s;
+}
+*/
+
+#intresectSubline {
+	font-family: 'Roboto';
+	opacity: 0.0;
+	font-size: 2em;
+}
+
+#navBar {
+	background-color: rgba(65, 185, 224, 0.75);
+	/* background-color: #41B9E0; */
+	color: #F5F5F5;
+
+	transition: background-color .5s;
+	-moz-transition: background-color .5s;
+	-webkit-transition: background-color .5s;
+	-o-transition: background-color .5s;
+
+	padding: 5px;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+#aboutSection {
+	background-color: #F5F5F5;
+	color: #080808;
+}
+
+.navButton {
+	font-size: 2em;
+	text-decoration: none;
+
+	color: #F5F5F5;
+
+	transition: color .5s;
+	-moz-transition: color .5s;
+	-webkit-transition: color .5s;
+	-o-transition: color .5s;
 }
