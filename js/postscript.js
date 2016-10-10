@@ -13,6 +13,8 @@ $('.navButton').mouseout(function() {
 	$(this).css('color', '#F5F5F5');
 });
 
+$('#bgLayer').append('<img style="width:100%;" src="./img/laptop.med.jpg" />');
+
 var distance = $('#navBar').offset().top;
 var dBottom = $('#navBar').offset().bottom;
 
