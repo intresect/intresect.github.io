@@ -8,6 +8,7 @@
 /* Light Colors */
 /* Orange:  #E06841 */
 /* Teal  :  #41B9E0 */
+/* Gray  :  #AAABAD; */
 
 html, body {
 	padding: 0px;
@@ -71,7 +72,7 @@ section {
 	right: 0px;
 }
 
-#aboutSection {
+#about {
 	background-color: #F5F5F5;
 	color: #080808;
 }
