@@ -22,6 +22,7 @@ $(window).scroll(function() {
 
     if ($(window).scrollTop() >= distance) {
         $('#navBar').css('position', 'fixed');
+        $('#spacer').css('height', $('#navBar').css('height'));
         $('#navBar').css('background-color', 'rgba(245, 245, 245, 0.75');
         $('#navBar').css('color', '#080808');
         $('.navButton').css('color', '#080808');
@@ -34,6 +35,7 @@ $(window).scroll(function() {
     }
     else {
     	$('#navBar').css('position', 'static');
+    	$('#spacer').css('height', '0px');
     	$('#navBar').css('background-color', 'rgba(65, 185, 224, 0.75)');
     	$('#navBar').css('color', '#F5F5F5');
     	$('.navButton').css('color', '#F5F5F5');

@@ -72,9 +72,30 @@ section {
 	right: 0px;
 }
 
+#spacer {
+	height: 0px;
+	background-color: rgba(65, 185, 224, 0.75);
+	padding: 0px;
+	z-index: -2;
+}
+
 #about {
 	background-color: #F5F5F5;
 	color: #080808;
+}
+
+#contact {
+	background-color: #FFFFFF;
+}
+
+a {
+	text-decoration: none;
+
+	transition: color .5s;
+	-moz-transition: color .5s;
+	-webkit-transition: color .5s;
+	-o-transition: color .5s;
+
 }
 
 .navButton {
